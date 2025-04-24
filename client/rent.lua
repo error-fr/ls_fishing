@@ -142,7 +142,6 @@ local function createSaveZone(coords)
     })
 end
 
-
 for _, location in ipairs(Config.renting.locations) do
     Utils.createPed(location.coords, Config.renting.model, {
         {

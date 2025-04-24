@@ -28,7 +28,7 @@
     "rent_heading": "Louer un bateau",
     "rent_content": "Voulez-vous vraiment louer ce bateau pour %s$ ?",
     "rent_price": "Cliquez pour louer ce bateau pour %s$.",
-    "rent_boat": "Louer des bateaux",
+    "rent_boat": "Louer un bateau",
     "unlocked_level": "Vous avez débloqué un nouveau niveau.",
     "no_bait": "Vous devez avoir un appât de pêche.",
     "rod_broke": "Votre canne à pêche n'a pas pu supporter la pression et s'est cassée.",
@@ -42,7 +42,7 @@
     "buy_cash": "Espèces",
     "buy_bank": "Banque",
     "bait_price": "Cliquez pour acheter cet appât pour %s$.",
-    "return_boat": "Rendre le bateau",
+    "return_boat": "[E] Rendre le bateau",
     "return_content": "Voulez-vous vraiment rendre ce bateau ?  \n  La location vous remboursera $%s en échange.",
     "returned_boat": "Vous avez rendu le bateau avec succès."
 }

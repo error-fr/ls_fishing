@@ -116,9 +116,9 @@ Config.ped = {
     sellAccount = 'bank',
     blip = {
         name = 'Pêche',
-        sprite = 356,
-        color = 74,
-        scale = 0.75
+        sprite = 914,
+        color = 12,
+        scale = 0.7
     },
 
     ---@type vector4[]
@@ -132,14 +132,14 @@ Config.renting = {
     model = `s_m_m_dockwork_01`, -- The ped model
     account = 'bank',
     boats = {
-        { model = `speeder`, price = 500, image = 'https://i.postimg.cc/mDSqWj4P/164px-Speeder.webp' },
-        { model = `dinghy`, price = 750, image = 'https://i.postimg.cc/ZKzjZgj0/164px-Dinghy2.webp'  },
-        { model = `tug`, price = 1250, image = 'https://i.postimg.cc/jq7vpKHG/164px-Tug.webp' }
+        { model = `seashark`, price = 500, image = 'https://docs.fivem.net/vehicles/seashark.webp' },
+        { model = `suntrap`, price = 500, image = 'https://docs.fivem.net/vehicles/suntrap.webp' },
+        { model = `dinghy3`, price = 750, image = 'https://docs.fivem.net/vehicles/dinghy3.webp'  }
     },
     blip = {
         name = 'Location de bateau',
-        sprite = 410,
-        color = 74,
+        sprite = 404,
+        color = 0,
         scale = 0.7
     },
     returnDivider = 5, -- Players can return it and get some cash back
