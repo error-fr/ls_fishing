@@ -5,7 +5,7 @@ local function updated(l)
     if not l then return end
     
     level = l
-    Update(level)
+    --Update(level)
 end
 
 lib.callback('lunar_fishing:getLevel', false, updated)

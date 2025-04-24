@@ -2,7 +2,7 @@ function ShowNotification(message, notifyType)
     lib.notify({
         description = message,
         type = notifyType,
-        position = 'top-right'
+        position = 'top-center'
     })
 end
 
@@ -14,7 +14,8 @@ function ShowUI(text, icon)
         lib.showTextUI(text)
     else
         lib.showTextUI(text, {
-            icon = icon
+            position = 'bottom-center',
+            --icon = icon
         })
     end
 end

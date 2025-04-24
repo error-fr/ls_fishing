@@ -85,6 +85,17 @@ function Update(level)
     updateZones(level)
 end
 
+lib.onCache('vehicle', function(vehicle)
+    if not vehicle then
+        Update(0)
+        return
+    end
+    
+    if IsPedInAnyBoat(cache.ped) then
+        Update(100)
+    end
+end)
+
 local function createRodObject()
     local model = `prop_fishing_rod_01`
 

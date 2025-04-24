@@ -17,7 +17,7 @@ local function sell(fishName)
         return
     end
 
-    local success = lib.callback.await('lunar_fishing:sellFish', false, fishName, amount)
+    local success = lib.callback.await('ls_fishing:sellFish', false, fishName, amount)
 
     if success then
         ShowProgressBar(locale('selling'), 3000, false, {
@@ -87,7 +87,24 @@ local function buy(data)
         return
     end
 
-    local success = lib.callback.await('lunar_fishing:buy', false, data, amount)
+    local purchase = lib.alertDialog({
+            header = locale('buy_type'),
+            content = locale('buy_type_desc'),
+            centered = true,
+            cancel = true,
+            labels = {
+                cancel = locale('buy_cash'),
+                confirm = locale('buy_bank')
+            }
+    })
+
+    local success = nil
+
+    if purchase == 'cancel' then
+        success = lib.callback.await('ls_fishing:buy', false, data, amount, 'money')
+    else
+        success = lib.callback.await('ls_fishing:buy', false, data, amount, 'bank')
+    end
 
     if success then
         ShowProgressBar(locale('buying'), 3000, false, {
@@ -134,7 +151,7 @@ local function buyBaits()
             title = Utils.getItemLabel(bait.name),
             description = locale('bait_price', bait.price),
             image = GetInventoryIcon(bait.name),
-            disabled = bait.minLevel > GetCurrentLevel(),
+            --disabled = bait.minLevel > GetCurrentLevel(),
             onSelect = buy,
             args = { type = 'baits', index = index }
         })
@@ -159,13 +176,13 @@ local function open()
         id = 'fisherman',
         title = locale('fisherman'),
         options = {
-            {
-                title = locale('level', level),
-                description = locale('level_desc', math.floor(100 - progress)),
-                icon = 'chart-simple',
-                progress = math.max(progress, 0.01),
-                colorScheme = 'lime'
-            },
+            -- {
+            --     title = locale('level', level),
+            --     description = locale('level_desc', math.floor(100 - progress)),
+            --     icon = 'chart-simple',
+            --     progress = math.max(progress, 0.01),
+            --     colorScheme = 'lime'
+            -- },
             {
                 title = locale('buy_rods'),
                 description = locale('buy_rods_desc'),
