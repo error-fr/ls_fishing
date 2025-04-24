@@ -132,9 +132,9 @@ Config.renting = {
     model = `s_m_m_dockwork_01`, -- The ped model
     account = 'bank',
     boats = {
-        { model = `seashark`, price = 500, image = 'https://docs.fivem.net/vehicles/seashark.webp' },
-        { model = `suntrap`, price = 500, image = 'https://docs.fivem.net/vehicles/suntrap.webp' },
-        { model = `dinghy3`, price = 750, image = 'https://docs.fivem.net/vehicles/dinghy3.webp'  }
+        { model = `seashark`, price = 150, image = 'https://docs.fivem.net/vehicles/seashark.webp' },
+        { model = `suntrap`, price = 200, image = 'https://docs.fivem.net/vehicles/suntrap.webp' },
+        { model = `dinghy3`, price = 500, image = 'https://docs.fivem.net/vehicles/dinghy3.webp'  }
     },
     blip = {
         name = 'Location de bateau',
