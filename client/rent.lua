@@ -116,7 +116,7 @@ local bind = lib.addKeybind({
     end
 })
 
----@parama coords vector4
+---@param coords vector4
 local function createSaveZone(coords)
     lib.points.new({
         coords = coords,
