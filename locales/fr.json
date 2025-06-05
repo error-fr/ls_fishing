@@ -7,7 +7,7 @@
     "sell_fish_heading2": "1x %s = %s - %s$",
     "amount": "Quantité",
     "selling": "Vente en cours",
-    "sold_fish": "Vous avez vendu le poisson avec succès.",
+    "sold_fish": "Vous avez vendu %g %s pour $%s.  \n Prix : $%s unité.",
     "not_enough_fish": "Quantité de poisson invalide.",
     "fish_price": "Cliquez pour vendre le poisson pour %s$.",
     "fish_price2": "Cliquez pour vendre le poisson pour %s - %s$.",

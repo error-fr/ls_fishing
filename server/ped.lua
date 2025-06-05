@@ -17,6 +17,13 @@ lib.callback.register('ls_fishing:sellFish', function(source, fishName, amount)
 
             player:removeItem(fishName, amount)
             player:addAccountMoney(Config.ped.sellAccount, price * amount)
+
+            print('amount', amount, 'fishName', fishName, 'price', price)
+
+            lib.notify(source, {
+                description = locale('sold_fish'):format(amount, Utils.getItemLabel(fishName), (price * amount), price),
+                type = 'success'
+            })
         end)
 
         return true

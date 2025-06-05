@@ -113,7 +113,7 @@ Config.outside = {
 Config.ped = {
     model = `s_m_m_cntrybar_01`,
     buyAccount = 'choose', -- 'money', 'bank' or 'choose'
-    sellAccount = 'bank',
+    sellAccount = 'cash',
     blip = {
         name = 'Pêche',
         sprite = 914,
@@ -130,7 +130,7 @@ Config.ped = {
 
 Config.renting = {
     model = `s_m_m_dockwork_01`, -- The ped model
-    account = 'bank',
+    account = 'cash',
     boats = {
         { model = `seashark`, price = 150, image = 'https://docs.fivem.net/vehicles/seashark.webp' },
         { model = `suntrap`, price = 200, image = 'https://docs.fivem.net/vehicles/suntrap.webp' },

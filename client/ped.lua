@@ -24,7 +24,7 @@ local function sell(fishName)
             dict = 'misscarsteal4@actor',
             clip = 'actor_berating_loop'
         })
-        ShowNotification(locale('sold_fish'), 'success')
+        -- ShowNotification(locale('sold_fish'), 'success')
     else
         ShowNotification(locale('not_enough_fish'), 'error')
     end

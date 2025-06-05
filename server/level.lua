@@ -23,7 +23,7 @@ local function save()
     end
 
     if size > 0 then
-        print('Saving player progress.')
+        --print('Saving player progress.')
         MySQL.prepare.await(query, parameters)
     end
 end
