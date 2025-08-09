@@ -9,17 +9,17 @@ Config.progressPerCatch = 0.05 -- The progress per one fish caught
 
 ---@type table<string, Fish>
 Config.fish = {
-    ['goldfish'] = { price = { min = 10, max = 15 }, chance = 35, skillcheck = { 'easy', 'easy', 'easy' } },
-    ['codfish'] = { price = { min = 35, max = 50 }, chance = 35, skillcheck = { 'easy', 'easy', 'easy' } },
-    ['catfish'] = { price = { min = 20, max = 35 }, chance = 20, skillcheck = { 'easy', 'easy', 'easy' } },
-    ['bluefish'] = { price = { min = 35, max = 50 }, chance = 10, skillcheck = { 'easy', 'easy', 'easy' } },
-    ['tuna'] = { price = { min = 10, max = 15 }, chance = 25, skillcheck = { 'easy', 'easy', 'easy' } },
-    ['redfish'] = { price = { min = 35, max = 50 }, chance = 25, skillcheck = { 'easy', 'easy', 'easy' } },
-    ['trout'] = { price = { min = 20, max = 35 }, chance = 20, skillcheck = { 'easy', 'easy', 'easy' } },
-    ['largemouth_bass'] = { price = { min = 20, max = 35 }, chance = 20, skillcheck = { 'easy', 'easy', 'easy' } },
-    ['peacock_bass'] = { price = { min = 50, max = 75 }, chance = 5, skillcheck = { 'easy', 'easy', 'easy' } },
-    ['mackerel'] = { price = { min = 120, max = 150 }, chance = 1, skillcheck = { 'easy', 'easy', 'easy' } },
-    ['sole'] = { price = { min = 120, max = 150 }, chance = 1, skillcheck = { 'easy', 'easy', 'easy' } },
+    ['goldfish'] = { price = { min = 3, max = 4 }, chance = 35, skillcheck = { 'easy', 'easy', 'easy' } },
+    ['codfish'] = { price = { min = 9, max = 13 }, chance = 35, skillcheck = { 'easy', 'easy', 'easy' } },
+    ['catfish'] = { price = { min = 5, max = 9 }, chance = 20, skillcheck = { 'easy', 'easy', 'easy' } },
+    ['bluefish'] = { price = { min = 9, max = 13 }, chance = 10, skillcheck = { 'easy', 'easy', 'easy' } },
+    ['tuna'] = { price = { min = 3, max = 4 }, chance = 25, skillcheck = { 'easy', 'easy', 'easy' } },
+    ['redfish'] = { price = { min = 9, max = 13 }, chance = 25, skillcheck = { 'easy', 'easy', 'easy' } },
+    ['trout'] = { price = { min = 5, max = 9 }, chance = 20, skillcheck = { 'easy', 'easy', 'easy' } },
+    ['largemouth_bass'] = { price = { min = 5, max = 9 }, chance = 20, skillcheck = { 'easy', 'easy', 'easy' } },
+    ['peacock_bass'] = { price = { min = 13, max = 19 }, chance = 5, skillcheck = { 'easy', 'easy', 'easy' } },
+    ['mackerel'] = { price = { min = 30, max = 38 }, chance = 1, skillcheck = { 'easy', 'easy', 'easy' } },
+    ['sole'] = { price = { min = 30, max = 38 }, chance = 1, skillcheck = { 'easy', 'easy', 'easy' } },
 }
 
 ---@class FishingRod
@@ -113,7 +113,7 @@ Config.outside = {
 Config.ped = {
     model = `s_m_m_cntrybar_01`,
     buyAccount = 'choose', -- 'money', 'bank' or 'choose'
-    sellAccount = 'cash',
+    sellAccount = 'bank',
     blip = {
         name = 'Pêche',
         sprite = 914,
@@ -130,7 +130,7 @@ Config.ped = {
 
 Config.renting = {
     model = `s_m_m_dockwork_01`, -- The ped model
-    account = 'cash',
+    account = 'bank',
     boats = {
         { model = `seashark`, price = 150, image = 'https://docs.fivem.net/vehicles/seashark.webp' },
         { model = `suntrap`, price = 200, image = 'https://docs.fivem.net/vehicles/suntrap.webp' },

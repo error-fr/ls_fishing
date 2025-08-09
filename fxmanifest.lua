@@ -1,3 +1,7 @@
+shared_script '@WaveShield/resource/waveshield.lua' --this line was automatically written by WaveShield
+
+
+
 -- Resource Metadata
 fx_version 'cerulean'
 game 'gta5'
